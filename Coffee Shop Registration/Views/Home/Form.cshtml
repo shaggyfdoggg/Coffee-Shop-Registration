@@ -9,8 +9,8 @@
     <input type ="text" name="LastName" />
     <p> Enter a valid email address</p>
     <input type ="text" name="EmailAddress" />
-    <p>Enter a password</p>
-    <input type ="password" password = "password" />
+    <p>Enter a password. (Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters)</p>
+    <input type ="password" password = "password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  required/>
 
     <input type="submit"/>
 </form>
